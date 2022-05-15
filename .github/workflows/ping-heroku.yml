@@ -1,0 +1,13 @@
+name: Ping Heroku App every 30 minutes
+
+on:
+  schedule:
+    # Runs every 30'
+    - cron: '*/30 * * * *'
+jobs:
+  build:
+    name: Ping Express App on Heroku
+    runs-on: ubuntu-latest
+    steps:
+      - name: cURL request
+        run: curl -X GET -d {} https://torino-parking-bot.herokuapp.com/
