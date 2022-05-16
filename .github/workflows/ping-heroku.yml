@@ -1,9 +1,9 @@
-name: Ping Heroku App every 30 minutes
+name: Ping Heroku App
 
 on:
   schedule:
-    # Runs every 30'
-    - cron: '*/30 * * * *'
+    # Runs every 25'
+    - cron: '*/25 * * * *'
 jobs:
   build:
     name: Ping Express App on Heroku
