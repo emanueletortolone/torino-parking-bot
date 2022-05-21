@@ -11,7 +11,7 @@
   },
   "type": "module",
   "author": "Emanuele Tortolone",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "axios-mock-adapter": "^1.20.0",
     "jest": "^28.0.0"
