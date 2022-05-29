@@ -15,5 +15,16 @@ The data are available in `XML` format from this open endpoint: https://opendata
 - `localtunnel`: open a proxy connection from localhost to a `local tunnel` server | https://localtunnel.github.io/www/
 - `server:dev`: start the application with a proxy connection to a `local tunnel` server
 
+## Environment Variables
+This app uses `environment variables` stored in a file called `.env`: for security reasons, this file is not inside this repo and all the variables are injected during the build phase.
+
+This is the structure of the file:
+```
+NAME=Torino Parking Bot
+BASE_URL=https://torino-parking-bot.loca.lt
+TOKEN=your-unique-telegram-token
+```
+The `BASE_URL` variable could be set with any reverse proxy like `ngrok` or `local tunnel`.
+
 ## Get the Bot on Telegram
 The bot is currently available on Telegram and you can find it using `@torino_parking_bot` username.
