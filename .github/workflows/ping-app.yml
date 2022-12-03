@@ -1,0 +1,13 @@
+name: Ping App
+
+on:
+  schedule:
+    # Runs every 60'
+    - cron: '*/60 * * * *'
+jobs:
+  build:
+    name: Ping Express App
+    runs-on: ubuntu-latest
+    steps:
+      - name: cURL request
+        run: curl -X GET -d {} https://torino-parking-bot.onrender.com/
